@@ -1,9 +1,6 @@
 let choco = Cookies.get('chocChip'),
 peanut = Cookies.get('peanutButter'),
-sugar = Cookies.get('sugar'),
-c = 0,
-p = 0,
-s = 0;
+sugar = Cookies.get('sugar');
 
 function getChoc() {
     if (choco) {
