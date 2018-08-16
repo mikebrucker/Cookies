@@ -1,0 +1,57 @@
+@import 'colors';
+@import 'divtext';
+@import 'images';
+@import 'bourbon/bourbon';
+
+body{
+    width: 100%;
+    background: url(images/cookieMonster.jpeg);
+    color: white;
+    font-size: 36px;
+    font-family: cursive;
+    text-align: center;
+}
+
+.block{
+    display: block;
+}
+
+#orderModal {
+    position: fixed;
+    display: none;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 66, 111, 0.6);
+}
+
+#modal {
+    display: inline-block;
+    margin: 60px 0 0;
+    width: 50%;
+    padding: 60px 0;
+}
+#modal img {
+    width: 30%;
+}
+
+.bigtext {
+    color: $cookie-color;
+    font-size: 60px;
+}
+
+#modal > .bigtext {
+    margin: 40px auto 0;
+}
+
+@media all and (max-width: 786px) {
+    img {
+        max-width: 30%;
+    }
+
+    #modal {
+        margin: 0 auto;
+        width: 80%;
+    }
+}

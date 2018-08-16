@@ -9,7 +9,7 @@
     <meta http-equiv="cache-control" content="no-cache" />
     <meta http-equiv="Cache-Control" content="no-store" />
     <link rel="stylesheet" type="text/css" href="reset.css">
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="stylesheets/style.css">
     <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
     <script src="cookies.js"></script>
 </head>
@@ -17,13 +17,16 @@
 <body>
     
     <div id="orderModal">
-        <div id="modal">
-            <img src="images/chocchip.png" />
-            <img src="images/peanutbutter.png" />
-            <img src="images/sugar.png" />
+        <div class="page" id="modal">
+            <img class="spin" src="stylesheets/images/chocchip.png" />
+            <img class="spin" src="stylesheets/images/peanutbutter.png" />
+            <img class="spin" src="stylesheets/images/sugar.png" />
             <div id="modalText"></div>
             <div class="bigtext">Enjoy!</div>
         </div>
+            
+        <div class="block"></div>
+        <div class="page" id="myOrders">MY ORDERS</div>
     </div>
 
     <script src="main.js"></script>

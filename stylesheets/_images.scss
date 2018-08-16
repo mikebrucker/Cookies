@@ -1,0 +1,35 @@
+img {
+    display: inline-block;
+    width: 250px;
+    transition: transform 0.5s;
+}
+
+.spinClick:hover {
+    transform: scale(1.2) rotate(360deg) translateY(60px);
+}
+
+.spinClick:active {
+    animation: image 2s linear infinite;
+}
+
+.spin {
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes image {
+    0% {
+        transform: scale(1.2) translateY(60px) rotate(0deg);
+    }
+    100% {
+        transform: scale(1.2) translateY(60px) rotate(360deg);
+    }
+}
